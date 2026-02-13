@@ -16,7 +16,7 @@ export function BodySection({
   imageFirst = false,
 }: BodySectionProps) {
   return (
-    <section className="flex flex-col md:flex-row items-center gap-10 md:gap-16 lg:gap-36 mx-auto">
+    <section className="flex flex-col md:flex-row items-center gap-10 md:gap-16 lg:gap-16 mx-auto">
       <div
         className={`flex flex-col gap-6 md:gap-12 text-center md:text-left ${imageFirst ? "md:order-last" : ""}`}
       >

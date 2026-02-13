@@ -73,6 +73,14 @@ export default function Home() {
           image_alt=""
           imageFirst
         />
+
+        {/* Conversation Section */}
+        <BodySection
+          title="Conversation"
+          content="Elevate your conversations with a broad collection of lovingly-crafted conversation starters."
+          image_src="/Conversation.png"
+          image_alt=""
+        />
       </div>
 
       {/* Waitlist Section */}
