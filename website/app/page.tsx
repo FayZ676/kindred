@@ -48,8 +48,7 @@ export default function Home() {
         {/* Purpose Section */}
         <BodySection
           title="Purpose"
-          content="Begin every session in Kindred with a short and meaningful quote
-              to help you stay grounded."
+          content="Start every session with a short and meaningful quote to help you stay grounded — so you can approach each interaction with intention."
           image_src="/Splashscreen.png"
           image_alt="Kindred splashscreen with a meaningful quote"
           imageFirst
@@ -58,8 +57,7 @@ export default function Home() {
         {/* Intention Section */}
         <BodySection
           title="Intention"
-          content="Something about how showing less profiles every day makes for a
-              better experience."
+          content="With just a handful of deeply compatible profiles each day, every person can receive the thoughtfulness they deserve — and every profile gives you something meaningful to discover."
           image_src="/Profiles.png"
           image_alt=""
         />
@@ -67,8 +65,7 @@ export default function Home() {
         {/* Character Section */}
         <BodySection
           title="Character"
-          content="Crucial questions and answers around topics such as values,
-              expectations, and more are the focal-point of every profile."
+          content="Thoughtful questions on faith, family, life goals, and partnership expectations form the heart of every profile — helping you see what matters most before the first conversation."
           image_src="/Profile.png"
           image_alt=""
           imageFirst
@@ -77,7 +74,7 @@ export default function Home() {
         {/* Conversation Section */}
         <BodySection
           title="Conversation"
-          content="Elevate your conversations with a broad collection of lovingly-crafted conversation starters."
+          content="Elevate your conversations with a collection of lovingly-crafted conversation starters. Getting deep has never been easier."
           image_src="/Conversation.png"
           image_alt=""
         />
