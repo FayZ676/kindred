@@ -48,7 +48,7 @@ export default function Home() {
         {/* Purpose Section */}
         <BodySection
           title="Purpose"
-          content="Start every session with a short and meaningful quote to help you stay grounded — so you can approach each interaction with intention."
+          content="Start every session with a short and meaningful quote to help you stay grounded."
           image_src="/Splashscreen.png"
           image_alt="Kindred splashscreen with a meaningful quote"
           imageFirst
@@ -57,7 +57,7 @@ export default function Home() {
         {/* Intention Section */}
         <BodySection
           title="Intention"
-          content="With just a handful of deeply compatible profiles each day, every person can receive the thoughtfulness they deserve — and every profile gives you something meaningful to discover."
+          content="With just a handful of deeply compatible profiles each day, every person can receive the thoughtfulness they deserve."
           image_src="/Profiles.png"
           image_alt=""
         />
