@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import { BodySection } from "./components/body-section";
 import { WaitlistForm } from "./components/waitlist-form";
 
 export default function Home() {
@@ -45,61 +46,33 @@ export default function Home() {
 
       <div className="grid gap-16 md:gap-14">
         {/* Purpose Section */}
-        <section className="flex flex-col md:flex-row items-center gap-10 md:gap-16 lg:gap-36 mx-auto">
-          <div className="flex flex-col gap-6 md:gap-12 text-center md:text-left">
-            <p className="text-3xl md:text-4xl font-bold">Purpose</p>
-            <p className="text-base md:text-lg font-bold max-w-md">
-              Begin every session in Kindred with a short and meaningful quote
-              to help you stay grounded.
-            </p>
-          </div>
-          <div className="relative w-48 h-96 md:w-64 md:h-125 shrink-0">
-            <Image
-              src="/Splashscreen.png"
-              alt="Kindred splashscreen with a meaningful quote"
-              fill
-              className="object-cover rounded-lg"
-            />
-          </div>
-        </section>
+        <BodySection
+          title="Purpose"
+          content="Begin every session in Kindred with a short and meaningful quote
+              to help you stay grounded."
+          image_src="/Splashscreen.png"
+          image_alt="Kindred splashscreen with a meaningful quote"
+          imageFirst
+        />
 
         {/* Intention Section */}
-        <section className="flex flex-col-reverse md:flex-row items-center gap-10 md:gap-16 lg:gap-36 mx-auto">
-          <div className="relative w-48 h-96 md:w-64 md:h-125 shrink-0">
-            <Image
-              src="/Profiles.png"
-              alt="Kindred profiles view"
-              fill
-              className="object-cover rounded-lg"
-            />
-          </div>
-          <div className="flex flex-col gap-6 md:gap-12 text-center md:text-left">
-            <p className="text-3xl md:text-4xl font-bold">Intention</p>
-            <p className="text-base md:text-lg font-bold max-w-md">
-              Something about how showing less profiles every day makes for a
-              better experience.
-            </p>
-          </div>
-        </section>
+        <BodySection
+          title="Intention"
+          content="Something about how showing less profiles every day makes for a
+              better experience."
+          image_src="/Profiles.png"
+          image_alt=""
+        />
 
         {/* Character Section */}
-        <section className="flex flex-col md:flex-row items-center gap-10 md:gap-16 lg:gap-36 mx-auto">
-          <div className="flex flex-col gap-6 md:gap-12 text-center md:text-left">
-            <p className="text-3xl md:text-4xl font-bold">Character</p>
-            <p className="text-base md:text-lg font-bold max-w-md">
-              Crucial questions and answers around topics such as values,
-              expectations, and more are the focal-point of every profile.
-            </p>
-          </div>
-          <div className="relative w-48 h-96 md:w-64 md:h-125 shrink-0">
-            <Image
-              src="/Profile.png"
-              alt="Kindred profile detail view"
-              fill
-              className="object-cover rounded-lg"
-            />
-          </div>
-        </section>
+        <BodySection
+          title="Character"
+          content="Crucial questions and answers around topics such as values,
+              expectations, and more are the focal-point of every profile."
+          image_src="/Profile.png"
+          image_alt=""
+          imageFirst
+        />
       </div>
 
       {/* Waitlist Section */}
