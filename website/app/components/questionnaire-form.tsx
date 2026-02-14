@@ -11,6 +11,12 @@ export function QuestionnaireForm({ email }: { email?: string }) {
         <p className="text-lg font-semibold text-green-700">
           Thank you for sharing your thoughts! 💛
         </p>
+        <a
+          href="/"
+          className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 underline"
+        >
+          ← Back to home
+        </a>
       </div>
     );
   }
@@ -20,7 +26,7 @@ export function QuestionnaireForm({ email }: { email?: string }) {
       onSubmit={handleSubmit}
       className="w-full max-w-2xl flex flex-col gap-6"
     >
-      {status === "error" && <p className="text-red-600 text-sm">{error}</p>}
+      {status === "error" && <p className="text-red-600">{error}</p>}
       {email && <input type="hidden" name="fi-sender-email" value={email} />}
       <div>
         <label htmlFor="lookingFor" className="block text-lg font-bold mb-2">
@@ -30,7 +36,7 @@ export function QuestionnaireForm({ email }: { email?: string }) {
           id="lookingFor"
           name="fi-text-feedback"
           required
-          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-base focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 resize-y"
+          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-base font-bold focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 resize-y"
           rows={6}
           placeholder="e.g. I wish there could be more of a focus on genuine conversation instead of just swiping..."
         />
