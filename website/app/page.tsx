@@ -33,15 +33,23 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="text-left flex flex-col gap-8 md:gap-12 max-w-96">
+      <section className="text-left flex flex-col gap-8 md:gap-12">
         <p className="text-3xl md:text-4xl font-bold">About</p>
-        <p className="text-base md:text-xl font-bold leading-relaxed">
-          Kindred draws from the teachings and principles of the{" "}
-          <a href="https://www.bahai.org/" className="text-amber-800 underline">
-            Baha&apos;i faith
-          </a>{" "}
-          to create a safe-haven for courtship.
-        </p>
+        <div className="grid gap-4">
+          <p className="text-base md:text-xl font-bold leading-relaxed">
+            Kindred draws from the teachings and princples of the{" "}
+            <a
+              href="https://www.bahai.org/"
+              className="text-amber-800 underline"
+            >
+              Baha&apos;i Faith
+            </a>{" "}
+            to help you create spiritually grounded relationships that last.
+          </p>
+          <p className="text-base md:text-xl font-bold leading-relaxed">
+            Here's what that looks like.
+          </p>
+        </div>
       </section>
 
       <div className="grid gap-16 md:gap-14">
@@ -65,7 +73,7 @@ export default function Home() {
         {/* Character Section */}
         <BodySection
           title="Character"
-          content="Thoughtful questions on faith, family, life goals, and partnership expectations form the heart of every profile — helping you see what matters most before the first conversation."
+          content="Innevitable questions on faith, family, life goals, and partnership expectations form the heart of every profile — helping you see what matters most before the first conversation."
           image_src="/Profile.png"
           image_alt=""
           imageFirst
@@ -74,7 +82,7 @@ export default function Home() {
         {/* Conversation Section */}
         <BodySection
           title="Conversation"
-          content="Elevate your conversations with a collection of lovingly-crafted conversation starters. Getting deep has never been easier."
+          content="Elevate your conversations at any moment with a collection of lovingly-crafted conversation starters. Getting deep has never been easier."
           image_src="/Conversation.png"
           image_alt=""
         />
