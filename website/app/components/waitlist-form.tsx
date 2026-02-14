@@ -1,40 +1,21 @@
 "use client";
 
-import { useState } from "react";
-import { Forminit } from "forminit";
-
-const forminit = new Forminit({ proxyUrl: "/api/forminit" });
+import { useRouter } from "next/navigation";
+import { useForminitSubmit } from "../hooks/use-forminit-submit";
 
 export function WaitlistForm() {
-  const [status, setStatus] = useState<
-    "idle" | "loading" | "success" | "error"
-  >("idle");
-  const [error, setError] = useState<string | null>(null);
-
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    setStatus("loading");
-    setError(null);
-
-    const form = e.currentTarget;
-    const formData = new FormData(form);
-
-    const { data, error } = await forminit.submit("zrxkron547b", formData);
-
-    if (error) {
-      setStatus("error");
-      setError(error.message);
-      return;
-    }
-
-    setStatus("success");
-    form.reset();
-  }
+  const router = useRouter();
+  const { status, error, handleSubmit } = useForminitSubmit(
+    "zrxkron547b",
+    (formData) => {
+      const email = formData.get("fi-sender-email") as string;
+      router.push(`/questionnaire?email=${encodeURIComponent(email)}`);
+    },
+  );
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full">
       {status === "error" && <p>{error}</p>}
-      {status === "success" && <p>You've been added you to our waitlist!</p>}
       <div className="flex gap-1">
         <input
           required
@@ -46,7 +27,7 @@ export function WaitlistForm() {
         <button
           type="submit"
           disabled={status === "loading"}
-          className="px-4 py-2 border rounded-lg text-amber-800 border-amber-600 bg-amber-100"
+          className="w-full rounded-lg px-8 py-3 text-base font-semibold text-amber-800 border border-amber-600 bg-amber-100 hover:bg-amber-200 transition-colors focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 cursor-pointer"
         >
           {status === "loading" ? "Joining" : "Join Waitlist"}
         </button>
