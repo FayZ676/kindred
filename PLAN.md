@@ -2,27 +2,31 @@
 
 Build top down, starting with high level and add detail from most important to least important. We want implementation to be as organized as possible and support flexibility as project specifics change. Build things that have the least likelihood to change first.
 
-1. Mobile Framework
-2. Authentication
-3. DB Integration
-4. Billing
-5. Messaging & Notifications
-7. Analytics and reporting
-8. Logging, error tracking, performance monitoring
-9. Schema design
-10. Onboarding
+1. Testing (Ongoing)
+2. CI/CD (Minimal setup as soon as possible)
+3. Schema design
+4. DB Integration
+5. Authentication
+6. Backend API Layer
+7. Mobile Framework
+8. Billing
+9. Onboarding
+10. Messaging & Notifications
+11. Profile matching
+12. Analytics and reporting
+13. Logging, error tracking, performance monitoring
 
 ## Mobile Framework
 
 ReactNative for cross platform support?
 
-## Authentication
-
-Supabase Auth?
-
 ## DB Integration
 
 Supabase for Postgres and pgvector support?
+
+## Authentication
+
+Supabase Auth?
 
 ## Messaging & Notifications
 
@@ -39,3 +43,7 @@ RevenueCat?
 3. Conversations
 4. Connections
 5. Questions
+
+## Profile Matching
+
+Match by age and distance/location filters first. Then rank profiles by question/answer similarity? Not sure if that is necessary, especially in the early stage because there won't be that many users to start. Maybe something to explore once the user base has grown?
