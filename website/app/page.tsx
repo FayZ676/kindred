@@ -14,6 +14,7 @@ export default function Home() {
             alt="Couple sitting in a field having a conversation"
             fill
             priority
+            quality={100}
             className="object-cover"
           />
           <div className="absolute inset-0 bg-black/10" />
@@ -44,7 +45,7 @@ export default function Home() {
             >
               Baha&apos;i Faith
             </a>{" "}
-            to help you create spiritually grounded relationships that last.
+            to help you build spiritually grounded relationships that last.
           </p>
           <p className="text-base md:text-xl font-bold leading-relaxed">
             Here's what that looks like.
