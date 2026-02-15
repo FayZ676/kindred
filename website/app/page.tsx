@@ -66,7 +66,7 @@ export default function Home() {
         {/* Intention Section */}
         <BodySection
           title="Intention"
-          content="With just a handful of deeply compatible profiles each day, every person can receive the thoughtfulness they deserve."
+          content="Each day brings a curated set of profiles — enough to explore potential connections meaningfully while staying present with every one."
           image_src="/Profiles.png"
           image_alt=""
         />

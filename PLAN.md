@@ -2,6 +2,7 @@
 
 Build top down, starting with high level and add detail from most important to least important. We want implementation to be as organized as possible and support flexibility as project specifics change. Build things that have the least likelihood to change first.
 
+**Ordered**
 1. Testing (Ongoing)
 2. CI/CD (Minimal setup as soon as possible)
 3. Schema design
@@ -13,8 +14,13 @@ Build top down, starting with high level and add detail from most important to l
 9. Onboarding
 10. Messaging & Notifications
 11. Profile matching
-12. Analytics and reporting
-13. Logging, error tracking, performance monitoring
+13. Analytics and reporting
+14. Logging, error tracking, performance monitoring
+
+**Unordered**
+- Profile filtering
+- Report/Block profile
+- Content Moderation
 
 ## Mobile Framework
 
