@@ -90,9 +90,13 @@ export default function Home() {
       </div>
 
       {/* Waitlist Section */}
-      <section className="text-center text-base md:text-lg font-bold grid gap-6 md:gap-8 max-w-4xl mx-auto px-0 md:px-20 lg:px-40 pb-16">
+      <section className="text-center text-base md:text-lg font-bold grid gap-6 md:gap-8 mx-auto px-0 md:px-20 lg:px-40 pb-16">
         <p className="text-3xl md:text-4xl">Be Part of the Journey</p>
-        <p>Get frequent updates and exclusive early access</p>
+        <p>
+          Get behind-the-scenes updates, be the first to test the app, and
+          receive invites to exclusive events.
+        </p>
+        <p className="text-amber-800">Show & Tell + Open Q&A coming soon.</p>
         <WaitlistForm />
       </section>
     </div>
