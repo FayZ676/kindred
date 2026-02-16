@@ -14,13 +14,41 @@ Build top down, starting with high level and add detail from most important to l
 9. Onboarding
 10. Messaging & Notifications
 11. Profile matching
-13. Analytics and reporting
-14. Logging, error tracking, performance monitoring
+12. Profile filtering
+13. Profile reporting & blocking
+14. Content moderation
+15. Analytics and reporting
+16. Logging, error tracking, performance monitoring
 
-**Unordered**
-- Profile filtering
-- Report/Block profile
-- Content Moderation
+## Schema Design
+
+**types**
+1. User
+2. Message
+3. Conversations
+4. Connections
+5. Questions
+
+**tables**
+1. User: Stores the profile information for each user
+2. Questions: Stores the question options themselves
+3. User Questions: Stores the question answer pairs for each user
+4. Connections: Tracks relationships between users (pending & successful connections, blocks, etc.)
+5. Conversations: Created when a connection is accepted and groups messages together
+6. Messages: Individual messages within a conversation.
+
+### Types
+
+**User**
+- id: UUID
+- created_at: datetime
+- name: string
+- birthday: date
+- gender: string enum (male, female)
+- location: geography(Point) — PostGIS, stores lat/lng
+- about: string
+- photo_url: string
+- is_active: boolean
 
 ## Mobile Framework
 
@@ -41,14 +69,6 @@ Supabase for real-time?
 ## Billing
 
 RevenueCat?
-
-## Schema Design
-
-1. Users
-2. Messages
-3. Conversations
-4. Connections
-5. Questions
 
 ## Profile Matching
 
