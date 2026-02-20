@@ -52,24 +52,26 @@ Build top down, starting with high level and add detail from most important to l
 
 ## Mobile Framework
 
-ReactNative for cross platform support?
+ReactNative for cross platform support.
 
 ## DB Integration
 
-Supabase for Postgres and pgvector support?
+Supabase for Postgres and pgvector support with Drizzle ORM.
 
 ## Authentication
 
-Supabase Auth?
+Supabase Auth.
 
 ## Messaging & Notifications
 
-Supabase for real-time?
+Supabase for real-time.
 
 ## Billing
 
-RevenueCat?
+RevenueCat.
 
 ## Profile Matching
 
 Match by age and distance/location filters first. Then rank profiles by question/answer similarity? Not sure if that is necessary, especially in the early stage because there won't be that many users to start. Maybe something to explore once the user base has grown?
+
+Need to keep track of profiles the user has previously seen since we want to prioritize showing the user profiles they either havent ever seen, or profiles they haven't seen recently.

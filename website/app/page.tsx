@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { BodySection } from "./components/body-section";
+import { FaqItem } from "./components/faq-item";
 import { WaitlistForm } from "./components/waitlist-form";
 
 export default function Home() {
@@ -32,7 +33,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* About Section */}
       <section className="text-left flex flex-col gap-8 md:gap-12">
         <p className="text-3xl md:text-4xl font-bold">About</p>
@@ -52,7 +52,6 @@ export default function Home() {
           </p>
         </div>
       </section>
-
       <div className="grid gap-16 md:gap-14">
         {/* Purpose Section */}
         <BodySection
@@ -88,9 +87,8 @@ export default function Home() {
           image_alt=""
         />
       </div>
-
       {/* Waitlist Section */}
-      <section className="text-center text-base md:text-lg font-bold grid gap-6 md:gap-8 mx-auto px-0 md:px-20 lg:px-40 pb-16">
+      <section className="text-center text-base md:text-lg font-bold grid gap-6 md:gap-8 mx-auto px-6 md:px-20 lg:px-40 py-8 border border-gray-200 rounded-2xl shadow-md">
         <p className="text-3xl md:text-4xl">Be Part of the Journey</p>
         <div className="grid gap-4">
           <p>
@@ -104,6 +102,23 @@ export default function Home() {
         </div>
         <WaitlistForm />
       </section>
+
+      {/* <section className="grid gap-8">
+        <h2 className="text-3xl md:text-4xl font-bold">FAQ</h2>
+        <div className="grid gap-4">
+          <FaqItem
+            question="Is this only for Baha'is?"
+            answer="No. It's not "
+          />
+          <FaqItem
+            question="How much will the service cost?"
+            answer="We don't yet know what that price will be, but we don't want it to be a prohibitor for people to use the app."
+          />
+        </div>
+      </section> */}
+
+      {/* Footer */}
+      <footer className="h-16 md:h-24" />
     </div>
   );
 }

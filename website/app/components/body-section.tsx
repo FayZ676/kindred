@@ -20,7 +20,7 @@ export function BodySection({
       <div
         className={`flex flex-col gap-6 md:gap-12 text-center md:text-left ${imageFirst ? "md:order-last" : ""}`}
       >
-        <p className="text-3xl md:text-4xl font-bold">{title}</p>
+        <h2 className="text-3xl md:text-4xl font-bold">{title}</h2>
         <p className="text-base md:text-lg font-bold max-w-md">{content}</p>
       </div>
       <div className={`shrink-0 ${imageFirst ? "md:order-first" : ""}`}>
