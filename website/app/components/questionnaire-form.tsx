@@ -1,16 +1,9 @@
 "use client";
 
-import { countries, getEmojiFlag, type TCountryCode } from "countries-list";
 import { useForminitSubmit } from "../hooks/use-forminit-submit";
 
 const AGE_RANGES = ["18–24", "25–34", "35–44", "45–54", "55+"];
 const GENDERS = ["Man", "Woman", "Other", "Prefer not to say"];
-const LOCATIONS = Object.entries(countries)
-  .map(([code, c]) => ({
-    label: `${getEmojiFlag(code as TCountryCode)} ${c.name}`,
-    value: c.name,
-  }))
-  .sort((a, b) => a.label.localeCompare(b.label));
 const HOW_MET = [
   "Through Family & Friends",
   "Bahá'í Activies",
@@ -19,13 +12,6 @@ const HOW_MET = [
   "Dating apps & websites",
   "Social media",
   "Other",
-];
-const LIKELIHOOD = [
-  "Very likely",
-  "Somewhat likely",
-  "Neutral",
-  "Somewhat unlikely",
-  "Very unlikely",
 ];
 
 export function QuestionnaireForm({ email }: { email?: string }) {
