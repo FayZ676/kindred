@@ -109,7 +109,7 @@ export default function Home() {
               honesty and care that helps both of you grow.
             </>
           }
-          image_src="/Part ways.png"
+          image_src="/Part Ways.png"
           image_alt=""
           imageFirst
         />
