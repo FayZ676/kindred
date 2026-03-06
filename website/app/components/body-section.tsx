@@ -1,8 +1,9 @@
 import Image from "next/image";
+import { ReactNode } from "react";
 
 interface BodySectionProps {
   title: string;
-  content: string;
+  content: ReactNode;
   image_src: string;
   image_alt: string;
   imageFirst?: boolean;

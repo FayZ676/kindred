@@ -38,17 +38,18 @@ export default function Home() {
         <p className="text-3xl md:text-4xl font-bold">About</p>
         <div className="grid gap-4">
           <p className="text-base md:text-xl font-bold leading-relaxed">
-            Kindred draws from the teachings and princples of the{" "}
+            Kindred explores how we can draw from the teachings and principles
+            of the{" "}
             <a
               href="https://www.bahai.org/"
               className="text-amber-800 underline"
             >
               Baha&apos;i Faith
             </a>{" "}
-            to help you build spiritually grounded relationships that last.
+            to help people build spiritually grounded relationships that last.
           </p>
           <p className="text-base md:text-xl font-bold leading-relaxed">
-            Here's what that looks like.
+            Here are some ways we imagine that.
           </p>
         </div>
       </section>
@@ -82,14 +83,40 @@ export default function Home() {
         {/* Conversation Section */}
         <BodySection
           title="Conversation"
-          content="Elevate your conversations at any moment with a collection of lovingly-crafted conversation starters. Getting deep has never been easier."
+          content={
+            <>
+              Elevate your conversations at any moment with a collection of
+              lovingly-crafted conversation starters.
+              <br />
+              <br />
+              Getting deep has never been easier.
+            </>
+          }
           image_src="/Conversation.png"
           image_alt=""
         />
+
+        {/* Reflection Section */}
+        <BodySection
+          title="Honesty"
+          content={
+            <>
+              Parting ways is a natural part of any journey. Ghosting someone
+              isn&apos;t.
+              <br />
+              <br />
+              When the time comes, leave a thoughtful note — a small act of
+              honesty and care that helps both of you grow.
+            </>
+          }
+          image_src="/Part ways.png"
+          image_alt=""
+          imageFirst
+        />
       </div>
       {/* Waitlist Section */}
-      <section className="text-center text-base md:text-lg font-bold grid gap-6 md:gap-8 mx-auto px-6 md:px-20 lg:px-40 py-8 border border-gray-200 rounded-2xl shadow-md">
-        <p className="text-3xl md:text-4xl">Be Part of the Journey</p>
+      <section className="text-center text-base md:text-lg font-bold grid gap-6 md:gap-8 mx-auto px-6 md:px-20 lg:px-40 py-8 rounded-2xl">
+        <p className="text-3xl md:text-4xl">Join Us in the Journey</p>
         <div className="grid gap-4">
           <p>
             Get behind-the-scenes updates, be the first to test the app, and
@@ -103,19 +130,31 @@ export default function Home() {
         <WaitlistForm />
       </section>
 
-      {/* <section className="grid gap-8">
+      <section className="grid gap-8">
         <h2 className="text-3xl md:text-4xl font-bold">FAQ</h2>
         <div className="grid gap-4">
           <FaqItem
-            question="Is this only for Baha'is?"
-            answer="No. It's not "
+            question="Who is building Kindred?"
+            answer="We're four people — two married couples in our twenties and thirties — who bonded over a shared observation: there isn't a good digital dating option for the Baha'i community as a whole. We wanted to explore what that could look like. Kindred is our attempt to answer that question."
           />
           <FaqItem
-            question="How much will the service cost?"
-            answer="We don't yet know what that price will be, but we don't want it to be a prohibitor for people to use the app."
+            question="When will this be available?"
+            answer="We're still in the exploration stage — speaking with community members, gathering feedback, and shaping what Kindred will become. If this site is up, we're actively working on it. Join our waitlist to stay updated on our progress."
+          />
+          <FaqItem
+            question="Is this only for Baha'is?"
+            answer="Not exclusively. Kindred is open to anyone, but it's built around Baha'i principles and directed primarily toward Baha'i communities — that's where we'll be sharing and growing it. So while all are welcome, it will likely resonate most with those who share that foundation."
+          />
+          <FaqItem
+            question="What ages is Kindred for?"
+            answer="We haven't finalized this yet, but we anticipate Kindred will be for adults 21 and older."
+          />
+          <FaqItem
+            question="Is Kindred free?"
+            answer="Kindred won't be free. Running and maintaining the app — from infrastructure to the people behind it — comes with real, recurring costs. Pricing also helps keep the community genuine and free from bots. That said, we're being very thoughtful about it so it isn't a barrier for most people. We'll share more details as we get closer to launch."
           />
         </div>
-      </section> */}
+      </section>
 
       {/* Footer */}
       <footer className="h-16 md:h-24" />
